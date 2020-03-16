@@ -11,11 +11,7 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-        factory(App\User::class, 3)->create()->each(function ($user) {
-            $user->assignRole('Admin');
-        });
-        factory(App\User::class, 10)->create()->each(function ($user) {
-            $user->assignRole('Inscrit');
-        });
+        factory(App\User::class, 5)->create();
     }
 }
+ 

@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -11,17 +13,6 @@
 |
 */
 
-Route::get('/', 'WelcomeController@index')->name('accueil');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
-Route::resource('evenements', 'EvenementController');
-
-Route::get('evenements/supprimer/{id}', [
-    'as' => 'delete_event',
-    'uses' => 'EvenementController@destroy'
-]);
-
-Route::get('user/{id}', 'UserController@show');
+Route::get('/', function () {
+    return view('welcome');
+});
