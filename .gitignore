@@ -2,6 +2,10 @@
 node_modules/
 npm-debug.log
 yarn-error.log
+laravel_uf/vendor/
+laravel_uf/.env
+laravel_uf/composer.lock
+
 
 # Laravel 4 specific
 bootstrap/compiled.php
