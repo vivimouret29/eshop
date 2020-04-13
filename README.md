@@ -1,5 +1,7 @@
 # Projet E-SHOP
 
+## Notation
+
 Le projet sera un site soundcloud-like, avec CRUD utilisateur, un systeme d'upload de musique, de note, de playlist de favoris, de catégorisation, 
 envoi d'email lorsque une certaine musique est upload.
 
@@ -35,3 +37,22 @@ Les utilisateurs peuvent se créer un compte et se connecter. Ils pourront compl
         * un nom
         * une description
         * une image
+
+## Livrable
+
+La page d'acceuil du site recense tous les morceaux disponibles.
+D'ici, vous pouvez donc lire les musiques qui sont déjà téléchargées.
+Vous pouvez vous inscrire en cliquant sur l'onglet Register ou cliquer sur l'onglet Login, sauf qu'aucun compte n'est déjà enregistré.
+
+La base de données intègre principalement *evenements* qui recense toutes les musiques (id, titre, durée, date d'upload, tags, auteur), *users* où chaque compte sera enregistré et *password_reset* où chaque mot de passe est enregistré sous forme de hash.
+
+Les fonctionnalités majeures du site sont d'upload n'importe quel type de musique ou de fichier audio en .mp3 une fois que l'utilisateur a un compte enregistré, de pouvoir le modifier, le supprimer depuis sa page Compte.
+
+
+![home](images/home.png)
+
+![register](images/register.png)
+
+![compte](images/moncompte.png)
+
+![audioplayer](images/audioplayer.png)
