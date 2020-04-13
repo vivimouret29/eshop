@@ -14,7 +14,7 @@
                                 <img src="{{ $evenement->url_image }}" class="img-fluid" style="width :100%; margin-bottom :20px;">
                             </div>
                             <div>
-                                <a href="{{ route('audiosearch', $evenement) }}"><button type="button" class="btn btn-primary">lire la musique</button></a>
+                                <a href="{{ route('audiosearch', $evenement) }}"><button type="button" class="btn btn-primary">lecteur de musique</button></a>
                             </div>
                         </div>
                     </div>
