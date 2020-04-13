@@ -13,8 +13,6 @@
 
 Route::get('/', 'WelcomeController@index')->name('accueil');
 
-Auth::routes();
-
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('evenements', 'EvenementController');
@@ -31,3 +29,5 @@ Route::get('audiosearch', 'PagesController@audiosearch')->name('audiosearch');
 Route::get('howler', 'PagesController@howler')->name('howler');
 
 Route::get('howler-update', 'PagesController@howler_update')->name('howler-update');
+
+Auth::routes(['verify' => true]);
