@@ -46,7 +46,7 @@ class SendMail extends Mailable
      */
     public function build()
     {
-        return $this->from('soundlike@mail.com')
+        return $this->from('sougcloud@mail.com')
                     ->view('view.name');
     }
 }
@@ -55,14 +55,3 @@ class SendMail extends Mailable
 
 dans les routes web.php :
 Auth::routes(['verify' => true]);
-
----
-
-pour reset password :
-<a href="{{ route('password.request')}}"> reset </a>
-
----
-
-rajouter dans App/user.php 
-
-use Illuminate\Contracts\Auth\CanResetPassword;
